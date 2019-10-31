@@ -9,7 +9,7 @@ $("button").on("click", function () {
 
     var dataURL = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
 
-    // Here we run our AJAX call to the OpenWeatherMap API
+
     $.ajax({
         url: dataURL,
         method: "GET"
@@ -40,7 +40,7 @@ $("button").on("click", function () {
         console.log("Temperature (F): " + response.main.temp);
     });
 
-    // Second AJAX call for 5 day forecast
+
 
     var fiveDayURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + apiKey;
 
